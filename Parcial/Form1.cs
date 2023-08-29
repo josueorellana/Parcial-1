@@ -16,5 +16,47 @@ namespace Parcial
         {
             InitializeComponent();
         }
+
+
+        private void LblCantidadeconomica_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            string m, c;
+            double monto, cantida;
+
+            m = txtCantidaconomica.Text;
+            c = txtValorapagar.Text;
+
+            cantida = double.Parse(txtValorapagar.Text);
+
+            double[][] pago = {
+
+
+                
+        }
+
+        private void txtValorapagar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblImpuestos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblValorapagar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCantidadeconomica_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
