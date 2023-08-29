@@ -32,9 +32,9 @@ namespace Parcial
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtCantidaconomica = new System.Windows.Forms.TextBox();
             this.LblCantidadeconomica = new System.Windows.Forms.Label();
-            this.txtValorapagar = new System.Windows.Forms.TextBox();
             this.LblValorapagar = new System.Windows.Forms.Label();
             this.LblImpuestos = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalcular
@@ -54,7 +54,7 @@ namespace Parcial
             this.txtCantidaconomica.Name = "txtCantidaconomica";
             this.txtCantidaconomica.Size = new System.Drawing.Size(100, 20);
             this.txtCantidaconomica.TabIndex = 2;
-            
+            this.txtCantidaconomica.TextChanged += new System.EventHandler(this.txtCantidaconomica_TextChanged);
             // 
             // LblCantidadeconomica
             // 
@@ -67,14 +67,6 @@ namespace Parcial
             this.LblCantidadeconomica.Text = "Cantidad Economica";
             this.LblCantidadeconomica.Click += new System.EventHandler(this.LblCantidadeconomica_Click);
             // 
-            // txtValorapagar
-            // 
-            this.txtValorapagar.Location = new System.Drawing.Point(300, 143);
-            this.txtValorapagar.Name = "txtValorapagar";
-            this.txtValorapagar.Size = new System.Drawing.Size(100, 20);
-            this.txtValorapagar.TabIndex = 4;
-           
-            // 
             // LblValorapagar
             // 
             this.LblValorapagar.AutoSize = true;
@@ -84,7 +76,6 @@ namespace Parcial
             this.LblValorapagar.Size = new System.Drawing.Size(110, 19);
             this.LblValorapagar.TabIndex = 5;
             this.LblValorapagar.Text = "Valor a Pagar";
-            
             // 
             // LblImpuestos
             // 
@@ -95,16 +86,26 @@ namespace Parcial
             this.LblImpuestos.Size = new System.Drawing.Size(125, 22);
             this.LblImpuestos.TabIndex = 6;
             this.LblImpuestos.Text = "IMPUESTOS";
-           
+            this.LblImpuestos.Click += new System.EventHandler(this.LblImpuestos_Click_1);
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(297, 148);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(19, 20);
+            this.lblResultado.TabIndex = 7;
+            this.lblResultado.Text = "?";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.LblImpuestos);
             this.Controls.Add(this.LblValorapagar);
-            this.Controls.Add(this.txtValorapagar);
             this.Controls.Add(this.LblCantidadeconomica);
             this.Controls.Add(this.txtCantidaconomica);
             this.Controls.Add(this.btnCalcular);
@@ -120,9 +121,9 @@ namespace Parcial
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtCantidaconomica;
         private System.Windows.Forms.Label LblCantidadeconomica;
-        private System.Windows.Forms.TextBox txtValorapagar;
         private System.Windows.Forms.Label LblValorapagar;
         private System.Windows.Forms.Label LblImpuestos;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 

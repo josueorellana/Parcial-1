@@ -26,37 +26,42 @@ namespace Parcial
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             string m, c;
-            double monto, cantida;
+            double monto, total;
 
             m = txtCantidaconomica.Text;
-            c = txtValorapagar.Text;
+            c = lblResultado.Text;
 
-            cantida = double.Parse(txtValorapagar.Text);
+            monto = double.Parse(txtCantidaconomica.Text);
 
-            double[][] pago = {
+            double[][] cantidades = {
+                new double[] { 0.01, 500.01, 1000.01, 2000.01, 3000.01, 8000.01, 18000.01, 30000.01, 60000.01, 100000.01, 200000.01, 3000000.01 }, // Desde
+                new double[] { 500, 1000, 2000, 3000, 6000, 18000, 30000, 60000, 100000, 200000, 300000, 400000 },
+                new double[] { 1.5, 1.5, 3, 6, 9, 15, 39, 63, 93, 125, 195, 255 },
+                new double[] { 0, 3, 3, 3, 2, 2, 2, 1, 0.8, 0.7, 0.6, 0.45 },
+            };
+
+            total = cantidades
+            
 
 
-                
-        }
 
-        private void txtValorapagar_TextChanged(object sender, EventArgs e)
+
+
+             
+        
+
+
+
+
+        private void txtCantidaconomica_TextChanged(object sender, EventArgs e)
+            {
+
+            }
+
+        private void LblImpuestos_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void LblImpuestos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblValorapagar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCantidadeconomica_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+    }
