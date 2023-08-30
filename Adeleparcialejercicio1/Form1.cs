@@ -71,5 +71,11 @@ namespace Adeleparcialejercicio1
         private static readonly decimal[] tablaAdicional = new decimal[] { 0m, 3m, 3m, 3m, 2m, 2m, 2m, 1m, 0.8m, 0.7m, 0.6m, 0.45m, 0.4m, 0.30m, 0.18m };
         private static readonly decimal[] tablaDesde = new decimal[] { 0.01m, 500m, 1000.01m, 2000.01m, 3000.01m, 8000.01m, 18000.01m, 30000.01m, 60000.01m, 100000.01m, 200000.01m, 300000.01m, 400000.01m, 500000.01m, 1000000.01m };
         private static readonly decimal[] tablaHasta = new decimal[] { 500m, 1000m, 2000m, 3000m, 6000m, 18000m, 30000m, 60000m, 100000m, 200000m, 300000m, 400000m, 500000m, 1000000m, 99999999m };
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtcantidad.Clear();
+            txtimpuestos.Clear();
+        }
     }
 }

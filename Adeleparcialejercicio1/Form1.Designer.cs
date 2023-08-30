@@ -34,6 +34,7 @@ namespace Adeleparcialejercicio1
             this.txtcantidad = new System.Windows.Forms.TextBox();
             this.lblimpuestos = new System.Windows.Forms.Label();
             this.txtimpuestos = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblcantidad
@@ -83,11 +84,23 @@ namespace Adeleparcialejercicio1
             this.txtimpuestos.TabIndex = 4;
             this.txtimpuestos.TextChanged += new System.EventHandler(this.txtimpuestos_TextChanged);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(79, 243);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(112, 31);
+            this.btnLimpiar.TabIndex = 5;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtimpuestos);
             this.Controls.Add(this.lblimpuestos);
             this.Controls.Add(this.txtcantidad);
@@ -108,6 +121,7 @@ namespace Adeleparcialejercicio1
         private System.Windows.Forms.TextBox txtcantidad;
         private System.Windows.Forms.Label lblimpuestos;
         private System.Windows.Forms.TextBox txtimpuestos;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
