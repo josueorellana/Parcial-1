@@ -51,7 +51,7 @@ namespace Adeleparcialejercicio1
             decimal adicional = tablaAdicional[rango];
             decimal impuesto = (cantidad - tablaDesde[rango]) * adicional / 1000 + precio;
 
-            return impuesto;
+            return Math.Round(impuesto,2);
         }
 
         private int encontrarRango(decimal cantidad)
